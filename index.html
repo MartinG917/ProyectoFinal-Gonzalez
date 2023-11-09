@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="app.js" async></script>
+    <title>Tienda de Relojes | </title>
+</head>
+<body>
+    <header>
+        <h1>Sneaker Addicts Shop</h1>
+    </header>
+    <button id="sorteo-button">Sorteo</button>
+
+    <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Jordan 11 Concord</span>
+                <img src="img/airjordan11concord-removebg-preview.png" alt="" class="img-item">
+                <span class="precio-item">$200</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Jordan 1 Mid "Taxi"</span>
+                <img src="img/airjordan1taxi-removebg-preview.png" alt="" class="img-item">
+                <span class="precio-item">$130</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Jordan 11 GREY</span>
+                <img src="img/11GREY.png" alt="" class="img-item">
+                <span class="precio-item">$260</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">JORDAN 4 BRED</span>
+                <img src="img/4BRED.png" alt="" class="img-item">
+                <span class="precio-item">$3200</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">JORDAN 4 KAWS</span>
+                <img src="img/4KAWS.png" alt="" class="img-item">
+                <span class="precio-item">$1000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">JORDAN 6 BYV</span>
+                <img src="img/6BYV.png" alt="" class="img-item">
+                <span class="precio-item">$220</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE SB MUMMY</span>
+                <img src="img/SBMUMMY.png" alt="" class="img-item">
+                <span class="precio-item">$110</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE UPTEMPO BYN</span>
+                <img src="img/UPTEMPOBYN.png" alt="" class="img-item">
+                <span class="precio-item">$170</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE UPTEMPO VARSITY RED</span>
+                <img src="img/UPTEMPOVR.png" alt="" class="img-item">
+                <span class="precio-item">$150</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE SB DUNK ORANGE CRAB</span>
+                <img src="img/DUNKCRAB.png" alt="" class="img-item">
+                <span class="precio-item">$140</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE SB DUNK HALLOWEEN</span>
+                <img src="img/DUNKHALLOWEEN.png" alt="" class="img-item">
+                <span class="precio-item">$360</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NIKE SB DUNK NAVY BLUE</span>
+                <img src="img/DUNKNAVYBLUE.png" alt="" class="img-item">
+                <span class="precio-item">$120</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+
+                    <div class="descuento">
+                        <input type="text" id="codigoDescuento" placeholder="Código de Descuento">
+                        <button id="aplicarDescuento">Aplicar</button>
+                    </div>
+                    
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
